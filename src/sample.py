@@ -23,6 +23,6 @@ class GreetRes():
         elif self.request == "こんばんは":
             return "こんばんは。"
         elif self.request == "おやすみ":
-          eturn "おやすみなさい。"
+          return "おやすみなさい。"
         else:
             raise Exception("予期しない入力値です。")
