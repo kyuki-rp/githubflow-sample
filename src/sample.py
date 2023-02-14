@@ -1,7 +1,3 @@
-import datetime
-import requests
-
-
 class Chatbot():
     def get_response(self, request):
         greetres = GreetRes(request)
@@ -23,6 +19,6 @@ class GreetRes():
         elif self.request == "こんばんは":
             return "こんばんは。"
         elif self.request == "おやすみ":
-          return "おやすみなさい。"
+            return "おやすみなさい。"
         else:
             raise Exception("予期しない入力値です。")

@@ -19,6 +19,11 @@ def test_Chatbot3():
 
 def test_Chatbot4():
     chatbot = sample.Chatbot()
+    res = chatbot.get_response("おやすみ")
+    assert res == "おやすみなさい。"
+
+def test_Chatbot5():
+    chatbot = sample.Chatbot()
     with pytest.raises(Exception) as e:
         res = chatbot.get_response("異常値を入力")
     assert str(e.value) == "予期しない入力値です。"
